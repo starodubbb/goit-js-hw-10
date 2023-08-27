@@ -1,0 +1,39 @@
+.loader {
+  margin: 10px;
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.breed-select {
+  width: 300px;
+}
+
+.cat-info {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cat-image {
+  height: 300px;
+}
