@@ -8,8 +8,9 @@ const options = {
 
 function fetchBreeds() {
   return fetch(`${BASE_URL}/breeds`, options).then(res => {
+    console.dir(res);
     if (!res.ok) {
-      throw new Error(res.status);
+      throw new Error(res.statusText);
     }
     return res.json();
   });
@@ -19,7 +20,7 @@ function fetchCatByBreed(breedId) {
   return fetch(`${BASE_URL}/images/search?breed_ids=${breedId}`, options).then(
     res => {
       if (!res.ok) {
-        throw new Error(res.status);
+        throw new Error(res.statusText);
       }
       return res.json();
     }

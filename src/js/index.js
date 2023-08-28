@@ -3,7 +3,7 @@ import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
 
 import '../css/common.css';
-import catAPI from './cat-api';
+import catAPI from './cat-api-axios';
 
 const refs = {
   breedSelect: document.querySelector('.breed-select'),
